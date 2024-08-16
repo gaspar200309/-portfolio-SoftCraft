@@ -1,42 +1,104 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+/* importamos la fuente */
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300;400;500;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'M PLUS Rounded 1c';
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #f6fafc;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+/* SECCION RESPONSIVE */
+@media screen and (max-width:1180px){
+  .inicio{
+      clip-path: none;
   }
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+@media screen and (max-width:800px){
+  .redes{
+      display: none;
   }
-}
+  #nav{
+      display: none;
+  }
+  #nav.responsive{
+      background-color: rgba(0,0,0,.9);
+      top: 0;
+      left: 0;
+      height: 100vh;
+      width: 100%;
+      position: absolute;
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      z-index: 99;
+  }
+  #nav.responsive a{
+      font-size: 30px;
+  }
+  #icono-nav{
+      display: block;
+  }
 
-.card {
-  padding: 2em;
-}
+  .inicio{
+      height: auto;
+  }
+  .inicio .fila{
+      display: block;
+  }
+  .inicio .fila .col{
+      width: 100%;
+      text-align: center;
+  }
+  .inicio .fila .col h2{
+      margin-top: 20px;
+  }
+  .inicio .fila .col .contenedor-img{
+      width: 50%;
+      margin-top: 30px;
+  }
 
-.read-the-docs {
-  color: #888;
+  .servicios{
+      position: static;
+      padding: 20px;
+  }
+  .servicios .fila{
+      display: block;
+      margin-bottom: 0;
+  }
+  .servicios .fila .col{
+      width: 70%;
+      margin: auto;
+  }
+  .servicios .fila .col .card{
+      margin-bottom: 20px;
+  }
+  .habilidades{
+      position: static;
+  }
+
+  .trabajos nav a{
+      margin: 0 5px;
+  }
+
+  .contacto .fila{
+      display:  block !important;
+  }
+  .contacto .fila .col{
+      text-align: center;
+      width: 100% !important;
+  }
+  .contacto .fila .col .info{
+      float: left;
+      font-size: 12px;
+      width: 25%;
+  }
 }
