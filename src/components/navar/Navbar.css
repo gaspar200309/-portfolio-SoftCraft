@@ -1,0 +1,53 @@
+/* src/components/Navbar/Navbar.css */
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 0;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: #00deef;
+    font-size: 25px;
+}
+
+#nav a {
+    color: #fff;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    text-transform: uppercase;
+    border: 2px solid transparent;
+}
+
+#nav a:hover {
+    border-bottom: 2px solid #ff5b00;
+}
+
+.redes a {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.redes a:hover {
+    color: #ff5b00;
+}
+
+#icono-nav {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    transition: 0.3s;
+    cursor: pointer;
+    display: none;
+}
+
+#icono-nav:hover {
+    background-color: #3e3e3e;
+}
