@@ -9,6 +9,12 @@ import ImagenesApp from '../../assets/ImagenesApp';
 import './Inicio.css';
 
 function Inicio() {
+    
+    const openWhatsApp = (phone, message) => {
+        const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
+        window.open(url, '_blank');
+    };
+
     return (
         <>
             <span className="sombra">
@@ -19,7 +25,11 @@ function Inicio() {
                             <div className="col">
                                 <h2>Desarrollador Fullstack</h2>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam non quasi deserunt libero iste culpa distinctio iure deleniti ducimus labore sed.</p>
-                                <button className="btn btn-1">Descargar CV</button>
+                                <button 
+                                    className="btn btn-1" 
+                                    onClick={() => openWhatsApp('62982552', 'Hola, estoy interesado en conocer más sobre sus servicios de desarrollo. ¿Podemos hablar?')}>
+                                    CONTACTANOS
+                                </button>
                             </div>
                             <div className="col">
                                 <div className="contenedor-img">
