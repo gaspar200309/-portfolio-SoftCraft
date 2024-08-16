@@ -1,11 +1,15 @@
 /* SECCION S E R V I C I O S */
 .servicios{
-    max-width: 1100px;
+    max-width: 1fr;
     margin: auto;
-    padding: 0 20px;
+    padding: 40px 40px;
     position: relative;
     top: 10px;
     z-index: 10;
+    background:
+        linear-gradient(rgba(233, 229, 229, 0.3), rgba(0, 12, 103, 0.8)),   
+        url("../../assets/img/tech-photo.jpg") center
+        ;
 }
 .servicios .fila{
     display: flex;
@@ -18,7 +22,7 @@
 }
 .servicios .fila .col .card{
     border: 1px solid #8d8d8d;
-    height: 390px;
+    height: 420px;
     background-color: #fff;
     padding: 30px;
     border-radius: 20px;
