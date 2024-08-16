@@ -23,6 +23,7 @@
     padding: 30px;
     border-radius: 20px;
     position: relative;
+    transition: 0.3s;
 }
 .servicios .icono{
     width: 70px;
@@ -84,3 +85,7 @@
     }
 }
 
+.servicios .fila .col .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
