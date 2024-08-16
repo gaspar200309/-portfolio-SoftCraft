@@ -3,6 +3,10 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaTwitterSquare } from 'react-icons/fa';
+import { FaInstagramSquare } from 'react-icons/fa';
+import { FaTiktok } from 'react-icons/fa';
+import { FaWhatsapp } from 'react-icons/fa'
 
 function Footer() {
     return (
@@ -10,7 +14,7 @@ function Footer() {
             <div className='footer-top'>
                 <div className='container'>
                     <div className='col1'>
-                        <Link to = {'/'} className = 'brand'>Brand</Link> 
+                        <Link to = {'/'} className = 'brand'>SoftCraft</Link> 
                         <ul className='media-icons'>
                             <li>
                                 <Link to = {'/'}>
@@ -19,22 +23,22 @@ function Footer() {
                             </li>
                             <li>
                                 <Link to = {'/'}>
-                                    <i className='fab fa-facebook'></i>
+                                    <FaTwitterSquare/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to = {'/'}>
-                                    <i className='fab fa-facebook'></i>
+                                    <FaInstagramSquare/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to = {'/'}>
-                                    <i className='fab fa-facebook'></i>
+                                    <FaTiktok/>
                                 </Link>
                             </li>
                             <li>
                                 <Link to = {'/'}>
-                                    <i className='fab fa-facebook'></i>
+                                    <FaWhatsapp/>
                                 </Link>
                             </li>
                         </ul>
