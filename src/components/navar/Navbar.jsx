@@ -14,7 +14,7 @@ function Navbar() {
                 <h1>SoftCraft</h1>
             </div>
             <nav id="nav" className="">
-                <Link to="/inicio">Inicio</Link>
+                <Link to="/">Inicio</Link>
                 <Link to="/servicios">Servicios</Link>
                 <Link to="/habilidades">Habilidades</Link>
                 <Link to="/trabajos">Trabajos</Link>

@@ -1,4 +1,5 @@
-import React, { useEffect } from 'react';
+// src/components/Inicio/Inicio.js
+import React from 'react';
 import Navbar from '../../components/navar/Navbar';
 import Servicios from '../services/Services';
 import Habilidades from '../skills/Skills';
@@ -8,14 +9,10 @@ import ImagenesApp from '../../assets/ImagenesApp';
 import './Inicio.css';
 
 function Inicio() {
-    useEffect(() => {
-        document.getElementById('inicio').style.clipPath = 'polygon(0, 0, 100% 0, 100% 65%, 50% 100%, 0 70%)';
-    }, []);
-
     return (
         <>
             <span className="sombra">
-                <div className="inicio" id="inicio">
+                <section id="inicio" className="inicio">
                     <div className="contenido">
                         <Navbar />
                         <div className="fila">
@@ -31,12 +28,12 @@ function Inicio() {
                             </div>
                         </div>
                     </div>
-                </div>
+                </section>
             </span>
-            <Servicios />
-            <Habilidades />
-            <Trabajos />
-            <Contacto />
+            <Servicios/>
+            <Habilidades/>
+            <Trabajos/>
+            <Contacto/>
         </>
     );
 }

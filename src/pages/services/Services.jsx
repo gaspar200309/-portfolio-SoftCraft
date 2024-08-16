@@ -1,11 +1,9 @@
 import React from 'react';
 import './Servicios.css';
-import Navbar from '../../components/navar/Navbar';
 import { FaCode,FaAndroid,FaLaptop,FaCogs,FaUserPlus,FaConnectdevelop } from 'react-icons/fa';
 function Servicios() {
     return (
         <section id="servicios" className="servicios">
-        <Navbar />
         <div className="fila">
             <div className="col">
                 <div className="card">
