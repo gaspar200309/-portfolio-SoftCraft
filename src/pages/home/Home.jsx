@@ -2,7 +2,15 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import Trabajos from '../jobs/Jobs';
+import Servicios from '../services/Services'
+import Contacto from '../contact/Contact';
+import Habilidades from '../skills/Skills'
 import ImagenesApp from '../../assets/ImagenesApp';
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaYoutube } from "react-icons/fa6";
+import { FaSquareXTwitter } from "react-icons/fa6";
+
+
 import './Inicio.css';
 
 function Inicio() {
@@ -13,8 +21,8 @@ function Inicio() {
             <div className="contenido">
                 <header>
                     <div className="logo">
-                        <i className="fa-brands fa-codepen"></i>
-                        <h1>Nombre</h1>
+                        <img src={ImagenesApp.logo} height='100px' width='100px'/>
+                        <h1>SoftCraft </h1>
                     </div>
                     <nav id="nav" className="">
                         <Link to="/inicio">Inicio</Link>
@@ -29,9 +37,9 @@ function Inicio() {
                     </div>
     
                     <div className="redes">
-                        <Link to="/"><i className="fa-brands fa-twitter"></i></Link>
-                        <Link to="/"><i className="fa-brands fa-youtube"></i></Link>
-                        <Link to="/"><i className="fa-brands fa-facebook-f"></i></Link>
+                        <Link to="/"><FaSquareXTwitter/></Link>
+                        <Link to="/"><FaYoutube/></Link>
+                        <Link to="/"><FaFacebookSquare/></Link>
                     </div>
                 </header>
     
@@ -50,7 +58,10 @@ function Inicio() {
             </div>
         </section>
     </span>
+    <Servicios/>
+    <Habilidades/>
     <Trabajos/>
+   <Contacto/>
     </>
 
     );
