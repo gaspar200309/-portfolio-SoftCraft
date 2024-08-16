@@ -1,47 +1,42 @@
+.habilidades {
+    padding: 50px 0;
+}
 
-/* seccion HABILIDADES */
-.habilidades{
-    background:linear-gradient(to right, #000c76, #007be5);
-    color: #fff;
-    padding: 60px 0;
-    position: relative;
-    top: -100px;
-}
-.habilidades h2{
-    text-align: center;
-}
-.habilidades .contenedor-habi{
+.contenedor-habi {
     max-width: 1100px;
     margin: auto;
-}
-.habilidades .fila{
-    display: flex;
-    justify-content: space-around;
-}
-.score{
-    padding: 10px;
-    margin: auto 0;
-}
-.score .box{
-    width: 100%;
-}
-.score .box h2{
-    display: block;
-    text-align: center;
-}
-.score .box .chart{
-    position: relative;
-    width: 160px;
-    height: 160px;
-    margin: auto;
-    line-height: 160px;
-    font-size: 40px;
     text-align: center;
 }
 
-/* Esta clase se genera dinámicamente por la librera para graficos */
-.score .box canvas{
-    position:absolute;
-    top: 0;
-    left: 0;
-}   
+.fila {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    width: 30%;
+    margin: 20px 0;
+}
+
+.score {
+    display: flex;
+    justify-content: center;
+}
+
+.box {
+    position: relative;
+    width: 150px;
+    height: 150px;
+}
+
+.box h2 {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #333;
+}
+
+.canvas {
+    width: 100%;
+    height: auto;
+}
