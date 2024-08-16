@@ -3,11 +3,10 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagramSquare } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6';
-
+import { FaGithub } from 'react-icons/fa6';
 function Footer() {
     return (
         <footer className='footer1'>
@@ -28,7 +27,7 @@ function Footer() {
                             </li>
                             <li>
                                 <Link to = {'/'}>
-                                    <FaInstagramSquare/>
+                                    <FaGithub/>
                                 </Link>
                             </li>
                             <li>
