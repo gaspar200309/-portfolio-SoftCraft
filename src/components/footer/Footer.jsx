@@ -106,7 +106,7 @@ function Footer() {
                     </div>
                     <div className='col3'>
                         <h4>Additional Info</h4>
-                        <p>En softCraft, transformamos ideas en soluciones digitales innovadoras, con precisión y excelencia en cada línea de código. </p>
+                        <p>En <span className='SC-span'>SoftCraft</span>, transformamos ideas en soluciones digitales innovadoras, con precisión y excelencia en cada línea de código. </p>
                     </div>
                 </div>
                 <div className='footer-buttom'>
