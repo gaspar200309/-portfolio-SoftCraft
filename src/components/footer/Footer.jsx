@@ -3,10 +3,10 @@ import './Footer.css';
 import { Link } from 'react-router-dom';
 
 import { FaFacebookSquare } from "react-icons/fa";
-import { FaTwitterSquare } from 'react-icons/fa';
 import { FaInstagramSquare } from 'react-icons/fa';
 import { FaTiktok } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa'
+import { FaXTwitter } from 'react-icons/fa6';
 
 function Footer() {
     return (
@@ -23,7 +23,7 @@ function Footer() {
                             </li>
                             <li>
                                 <Link to = {'/'}>
-                                    <FaTwitterSquare/>
+                                    <FaXTwitter/>
                                 </Link>
                             </li>
                             <li>
@@ -49,19 +49,19 @@ function Footer() {
                                 <h4>About</h4>
                             </li>
                             <li>
-                                <Link to = {''} >Service</Link>
+                                <Link to = {'/servicios'} >Services</Link>
                             </li>
                             <li>
-                                <Link to = {''} >trabajos</Link>
+                                <Link to = {'/trabajos'} >trabajos</Link>
                             </li>
                             <li>
-                                <Link to = {''} >Precios</Link>
+                                <Link to = {''} >Pricing</Link>
                             </li>
                             <li>
-                                <Link to = {''} >Contactos</Link>
+                                <Link to = {'/contacto'} >Contact</Link>
                             </li>
                             <li>
-                                <Link to = {''} >Carrera</Link>
+                                <Link to = {''} >Career</Link>
                             </li>
                         </ul>
                         <ul className='menu'>
@@ -94,28 +94,25 @@ function Footer() {
                                 <Link to={'/'}>Help</Link>
                             </li>
                             <li>
-                                <Link to={''}>Sales</Link>
+                                <Link to={'/'}>Sales</Link>
                             </li>
                             <li>
-                                <Link to={''}>Advertise</Link>
+                                <Link to={'/'}>Advertise</Link>
                             </li>
                             <li>
-                                <Link to={''}>Location</Link>
+                                <Link to={'/'}>Location</Link>
                             </li>
                         </ul>
                     </div>
                     <div className='col3'>
                         <h4>Additional Info</h4>
-                        <p>Lorem ipsum cuantos hay para 
-                        seguir haciendo el siguiente proyecto 
-                        Lorem ipsum cuantos hay para seguir
-                         haciendo el siguiente proyecto </p>
+                        <p>En softCraft, transformamos ideas en soluciones digitales innovadoras, con precisión y excelencia en cada línea de código. </p>
                     </div>
                 </div>
                 <div className='footer-buttom'>
                     <div className='container'>
                         <p>
-                            Lorem ipsum dolor sit amme
+                            SoftCraft
                             - All rigths reserved
                         </p>
                         <ul className='service-icons'>
