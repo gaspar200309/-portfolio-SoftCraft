@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './components/navar/Header';
 import Inicio from './pages/home/Home';
 import Servicios from './pages/services/Services';
 import Habilidades from './pages/skills/Skills';
