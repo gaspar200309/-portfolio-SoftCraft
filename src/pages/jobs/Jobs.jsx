@@ -1,5 +1,6 @@
 import React from 'react';
 import './Trabajos.css';
+import ImagenesApp from '../../assets/ImagenesApp';
 
 function Trabajos() {
     return (
@@ -15,7 +16,8 @@ function Trabajos() {
 
         <div className="galeria">
             <div className="item disenio">
-                <img src="img/trabajo1.png" alt=""/>
+                <img src={ImagenesApp.trabajo1} alt=""/>
+
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
@@ -23,7 +25,7 @@ function Trabajos() {
                 </div>
             </div>
             <div className="item programacion">
-                <img src="img/trabajo2.png" alt=""/>
+                <img src={ImagenesApp.trabajo2} alt=""/>
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
@@ -31,7 +33,7 @@ function Trabajos() {
                 </div>
             </div>
             <div className="item animaciones">
-                <img src="img/trabajo3.png" alt=""/>
+                <img src={ImagenesApp.trabajo3} alt=""/>
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
@@ -39,7 +41,7 @@ function Trabajos() {
                 </div>
             </div>
             <div className="item disenio">
-                <img src="img/trabajo4.png" alt=""/>
+                <img src={ImagenesApp.trabajo4} alt=""/>
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
@@ -47,7 +49,7 @@ function Trabajos() {
                 </div>
             </div>
             <div className="item animaciones">
-                <img src="img/trabajo5.png" alt=""/>
+                <img src={ImagenesApp.trabajo5} alt=""/>
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
@@ -55,7 +57,7 @@ function Trabajos() {
                 </div>
             </div>
             <div className="item programacion">
-                <img src="img/trabajo6.png" alt=""/>
+                <img src={ImagenesApp.trabajo6} alt=""/>
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
@@ -63,7 +65,7 @@ function Trabajos() {
                 </div>
             </div>
             <div className="item disenio">
-                <img src="img/trabajo7.png" alt=""/>
+                <img src={ImagenesApp.trabajo7} alt=""/>
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
@@ -71,7 +73,7 @@ function Trabajos() {
                 </div>
             </div>
             <div className="item programacion">
-                <img src="img/trabajo8.png" alt=""/>
+                <img src={ImagenesApp.trabajo8} alt=""/>
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
@@ -79,7 +81,7 @@ function Trabajos() {
                 </div>
             </div>
             <div className="item programacion">
-                <img src="img/trabajo9.png" alt=""/>
+                <img src={ImagenesApp.trabajo9} alt=""/>
                 <div className="info">
                     <h3>Titulo del Trabajo</h3>
                     <span>html</span><span>css</span><span>javascript</span>
