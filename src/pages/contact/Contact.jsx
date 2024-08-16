@@ -11,26 +11,26 @@ function Contacto() {
             <div className="col">
                 <div className="info">
                     <h3>Email:</h3>
-                    <p>micorreo@gmail</p>
+                    <p>gaspar123@gmail</p>
                 </div>
                 <div className="info">
                     <h3>Teléfono:</h3>
-                    <p>+55 55555</p>
+                    <p>+591 62982552</p>
                 </div>
                 <div className="info">
                     <h3>País</h3>
-                    <p>Argentina</p>
+                    <p>Bolivia</p>
                 </div>
                 <div className="info">
                     <h3>Ciudad:</h3>
-                    <p>San Luis</p>
+                    <p>Cochabamba</p>
                 </div>
             </div>
             <div className="col">
                 <input type="text" placeholder="Nombre..."/>
                 <input type="text" placeholder="Correo..."/>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
-                <input type="submit" value="Enviar" className="btn"/>
+                <input className='textArea' name="" id="" cols="30" rows="10" placeholder="Mensaje..."></input>
+                <button className="btn">Enviar</button>
             </div>
         </div>
     </div>
