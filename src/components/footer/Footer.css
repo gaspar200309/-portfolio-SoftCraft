@@ -151,3 +151,7 @@ footer .container {
         flex-wrap: wrap;
     }
 }
+.SC-span{
+    font-weight: 900;
+    font-style: italic;
+}
