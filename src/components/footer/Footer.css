@@ -1,1 +1,153 @@
-    
+body {
+    margin: 0;
+    font-family:Helvetica, sans-serif;
+    background: #333;
+}
+
+h1 {
+    color: #fff;
+    text-align: center;
+    margin: 3em 0;
+    font-size: 3em;
+}
+
+footer * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+footer ul {
+    list-style: none;
+
+}
+
+footer{
+    color: #fff;
+    background-color: #121315;
+}
+
+footer p {
+    color: #ccc;
+    max-width: 25em;
+    font-size: 0.9em;
+    line-height: 23px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer h4 {
+    margin-bottom: 1em;
+    text-transform: uppercase;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2em;
+}
+
+.footer1 {
+    position: relative;
+    background: 
+        url("../../assets/img/foto-inicio.png")
+        no-repeat center;
+    background-size: cover;
+}
+
+.footer1::before{
+    content: '';
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.footer1 .container {
+    position: relative;
+}
+
+.footer1 .footer-top .container,
+.footer1 .col2,
+.footer1 .footer-buttom .container{
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+}
+
+.footer1 .footer-buttom .container{
+    padding: 1em 2em;
+    align-items: center;
+}
+
+.footer1 .menu li{
+    margin-bottom: 0.6em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.footer1 .menu a:hover{
+    text-decoration: underline;
+}
+
+.brand{
+    display: block;
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 1em;
+}
+
+.media-icons li,
+.service-icons li {
+    display: inline-block;
+    margin: 0.5em 0.5em 0.5em 0;
+}
+
+.media-icons a {
+    font-size: 1.1em;
+    width: 2em;
+    height: 2em;
+    border: 1px #fff solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.media-icons a:hover {
+    background: #fff;
+    color: #111;
+}
+
+.service-icons a {
+    font-size: 1.6em;
+}
+
+.service-icons a:hover {
+    color: #dbdbdb;
+}
+
+.footer-buttom{
+    border-top: 1px #dbdbdb solid;
+}
+
+
+@media screen and (max-width: 750px){
+    .footer1 .footer-top .container,
+    .footer1 .footer-buttom .container {
+        flex-direction: column;
+    }
+
+    .footer1 .col2 {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+    }
+}
