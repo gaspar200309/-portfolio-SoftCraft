@@ -4,7 +4,7 @@
     margin: auto;
     padding: 0 20px;
     position: relative;
-    top: -170px;
+    top: 10px;
     z-index: 10;
 }
 .servicios .fila{
@@ -18,11 +18,12 @@
 }
 .servicios .fila .col .card{
     border: 1px solid #8d8d8d;
-    height: 400px;
+    height: 390px;
     background-color: #fff;
     padding: 30px;
     border-radius: 20px;
     position: relative;
+    transition: 0.3s;
 }
 .servicios .icono{
     width: 70px;
@@ -32,7 +33,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
 }
 .servicios .icono .circulo{
     width: 90%;
@@ -55,12 +56,15 @@
     background: linear-gradient(#04e2ee, #017795);
 }
 .servicios h3{
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 .servicios .card p{
     color: #8d8d8d;
     line-height: 28px;
-    font-size: 12px;
+    font-size: 13px;
+    text-align: justify;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 .servicios .card a{
     text-decoration: none;
@@ -69,4 +73,19 @@
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+@media (max-width: 768px) {
+    .servicios .fila {
+        flex-direction: column;
+        align-items: center;
+    }
+    .servicios .fila .col {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.servicios .fila .col .card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
 }
