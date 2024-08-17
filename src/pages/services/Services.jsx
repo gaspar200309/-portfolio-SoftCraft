@@ -4,6 +4,7 @@ import { FaCode,FaAndroid,FaLaptop,FaCogs,FaUserPlus,FaConnectdevelop } from 're
 function Servicios() {
     return (
         <section id="servicios" className="servicios">
+        <h1>Servicios</h1>
         <div className="fila">
             <div className="col">
                 <div className="card">
