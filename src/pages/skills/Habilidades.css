@@ -1,11 +1,18 @@
 .habilidades {
-    padding: 50px 0;
+    padding: 25px 0;
+    background: linear-gradient(rgba(12, 29, 158, 0.8), rgba(207, 26, 26, 0.8));
+    margin-top: 10px;
 }
 
 .contenedor-habi {
     max-width: 1100px;
     margin: auto;
     text-align: center;
+}
+.contenedor-habi h2{
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: white;
 }
 
 .fila {
@@ -28,15 +35,20 @@
     position: relative;
     width: 150px;
     height: 150px;
+    margin-bottom: 20px;
 }
 
 .box h2 {
     margin-top: 15px;
     font-size: 18px;
-    color: #333;
+    color: #dbdbdb;
 }
 
 .canvas {
     width: 100%;
     height: auto;
 }
+.canvas {
+    color: inherit;
+}
+
