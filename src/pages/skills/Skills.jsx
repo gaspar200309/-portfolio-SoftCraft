@@ -4,14 +4,13 @@ import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import './Habilidades.css';
 
 ChartJS.register(ArcElement, Tooltip, Legend);
-
 const centerTextPlugin = {
     id: 'centerText',
     afterDatasetsDraw(chart) {
         const { ctx, data, chartArea: { width, height } } = chart;
         ctx.save();
-        ctx.font = 'bold 20px Arial';
-        ctx.fillStyle = '#333';
+        ctx.font = 'bold 35px Arial';
+        ctx.fillStyle = '#FFFFFF';
         ctx.textAlign = 'center';
         ctx.textBaseline = 'middle';
         data.datasets.forEach((dataset, i) => {
@@ -25,10 +24,10 @@ const centerTextPlugin = {
 function Habilidades() {
     const data = [
         { label: "HTML & CSS", percent: 95, color: "#ff6384" },
-        { label: "BOOTSTRAP", percent: 90, color: "#36a2eb" },
+        { label: "REACT", percent: 90, color: "#36a2eb" },
         { label: "JAVASCRIPT", percent: 85, color: "#ffce56" },
-        { label: "MYSQL", percent: 70, color: "#4bc0c0" },
-        { label: "PHP", percent: 90, color: "#9966ff" },
+        { label: "POSTGRES DB", percent: 70, color: "#4bc0c0" },
+        { label: "SPRINGBOOT", percent: 90, color: "#9966ff" },
         { label: "PHOTOSHOP", percent: 90, color: "#ff9f40" }
     ];
 
@@ -37,7 +36,7 @@ function Habilidades() {
             datasets: [
                 {
                     data: [percent, 100 - percent],
-                    backgroundColor: [color, "#e0e0e0"],
+                    backgroundColor: [color, "#ffffff"],
                     borderWidth: 1,
                 },
             ],
