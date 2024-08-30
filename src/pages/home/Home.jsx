@@ -1,8 +1,13 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
+//componentes
 import Trabajos from '../jobs/Jobs';
+
+//assets
 import ImagenesApp from '../../assets/ImagenesApp';
+
+//css
 import './Inicio.css';
 
 function Inicio() {
