@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* SECCION I N I C I O */
 .inicio {
   background: linear-gradient(to right, #000c67, #be2626);
