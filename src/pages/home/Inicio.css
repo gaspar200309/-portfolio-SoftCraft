@@ -1,9 +1,14 @@
+html {
+  scroll-behavior: smooth;
+}
+
 /* SECCION I N I C I O */
 .inicio {
   background: linear-gradient(to right, #000c67, #be2626);
   clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
   height: 100vh;
   padding: 0 20px;
+  margin-bottom: 55px;
 }
 .inicio .contenido {
   max-width: 1100px;
