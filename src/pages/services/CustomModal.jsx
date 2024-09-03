@@ -7,14 +7,16 @@ function CustomModal({ show, onClose, title, content, images }) {
     return (
         <div className="modal-overlay">
             <div className="modal-content">
-                <h2>{title}</h2>
                 <div className="modal-body">
-                    {content.map((paragraph, index) => (
-                        <p key={index}>{paragraph}</p>
-                    ))}
                     <div className="modal-images">
                         {images.map((image, index) => (
                             <img key={index} src={image.src} alt={image.alt} className="modal-image" />
+                        ))}
+                    </div>
+                    <div className="modal-text">
+                        <h2>{title}</h2>
+                        {content.map((paragraph, index) => (
+                            <p key={index}>{paragraph}</p>
                         ))}
                     </div>
                 </div>
@@ -25,3 +27,4 @@ function CustomModal({ show, onClose, title, content, images }) {
 }
 
 export default CustomModal;
+
