@@ -12,16 +12,7 @@ function Servicios() {
         <section id="servicios" className="servicios">
         <h1>Servicios</h1>
         <div className="fila">
-            <div className="col">
-                <div className="card">
-                    <div className='img-container'>
-                        <img src= {ciberseguridad} alt="" className='image-card'/>
-                    </div>
-                    <h3>Ciberseguridad</h3>
-                    <p>¿Cansado de preocuparte por hackers? ¡Protege tu negocio con nuestras soluciones a medida! Realizamos auditorías de seguridad, implementamos firewalls robustos y te brindamos las herramientas necesarias para mantener tus datos a salvo.</p>
-                    <a href="#">Leer Más</a>
-                </div>
-            </div>
+            
             <div className="col">
                 <div className="card">
                     <div className='img-container'>
@@ -44,8 +35,6 @@ function Servicios() {
                     <a href="#">Leer Más</a>
                 </div>
             </div>
-        </div>
-        <div className="fila">
             <div className="col">
                 <div className="card">
                     <div className='img-container'>
@@ -57,6 +46,9 @@ function Servicios() {
                     <a href="#">Leer Más</a>
                 </div>
             </div>
+        </div>
+        <div className="fila">
+            
             <div className="col">
                 <div className="card">
                     <div className='img-container'>
@@ -76,6 +68,16 @@ function Servicios() {
                     <h3>DevOps</h3>
                     <p> Optimiza tus procesos de desarrollo y entrega de software con nuestras soluciones DevOps. Automatizamos tus flujos de trabajo, implementamos prácticas de integración continua y despliegue continuo, y te ayudamos a reducir el tiempo de salida al mercado.</p>
 
+                    <a href="#">Leer Más</a>
+                </div>
+            </div>
+            <div className="col">
+                <div className="card">
+                    <div className='img-container'>
+                        <img src= {ciberseguridad} alt="" className='image-card'/>
+                    </div>
+                    <h3>Ciberseguridad</h3>
+                    <p>¿Cansado de preocuparte por hackers? ¡Protege tu negocio con nuestras soluciones a medida! Realizamos auditorías de seguridad, implementamos firewalls robustos y te brindamos las herramientas necesarias para mantener tus datos a salvo.</p>
                     <a href="#">Leer Más</a>
                 </div>
             </div>

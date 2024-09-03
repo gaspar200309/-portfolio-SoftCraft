@@ -14,7 +14,6 @@ function Inicio() {
         const url = `https://wa.me/${phone}?text=${encodeURIComponent(message)}`;
         window.open(url, '_blank');
     };
-
     return (
         <>
             <span className="sombra">
@@ -23,9 +22,11 @@ function Inicio() {
                         <Navbar />
                         <div className="fila">
                             <div className="col">
-                                <h2>Desarrollador Fullstack</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam non quasi deserunt libero iste culpa distinctio iure deleniti ducimus labore sed.</p>
-                                <button 
+                                <h2>Soluciones Digitales con Inteligencia Artificial</h2>
+                                <p>Desarrollo de aplicaciones móviles y páginas web innovadoras 
+                                que llevan tu negocio al siguiente nivel, integrando la última
+                                 tecnología en inteligencia artificial.</p>
+                                <button     
                                     className="btn btn-1" 
                                     onClick={() => openWhatsApp('62982552', 'Hola, estoy interesado en conocer más sobre sus servicios de desarrollo. ¿Podemos hablar?')}>
                                     CONTACTANOS
