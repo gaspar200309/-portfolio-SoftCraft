@@ -46,7 +46,7 @@ function Habilidades() {
     return (
         <section className="habilidades" id="habilidades">
             <div className="contenedor-habi">
-                <h2>Habilidades</h2>
+                <h2>Nosotros</h2>
                 <div className="fila">
                     {data.map((item, index) => (
                         <div className="col" key={index}>
