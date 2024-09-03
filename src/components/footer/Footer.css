@@ -48,8 +48,7 @@ footer .container {
 
 .footer1 {
   position: relative;
-  background: url("../../assets/img/foto-inicio.png") no-repeat center;
-  background-size: cover;
+  background-color: #20283a;
 }
 
 .footer1::before {

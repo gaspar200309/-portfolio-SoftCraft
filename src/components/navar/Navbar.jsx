@@ -1,10 +1,10 @@
 // src/components/Navbar/Navbar.js
-import React from 'react';
 import ImagenesApp from '../../assets/ImagenesApp';
 import { Link } from 'react-router-dom';
 import { FaFacebookSquare } from "react-icons/fa";
 import { FaYoutube, FaSquareXTwitter } from "react-icons/fa6";
 import './Navbar.css';
+
 
 function Navbar() {
     return (
@@ -14,11 +14,11 @@ function Navbar() {
                 <h1>SoftCraft</h1>
             </div>
             <nav id="nav" className="">
-                <Link to="/">Inicio</Link>
-                <Link to="/servicios">Servicios</Link>
-                <Link to="/habilidades">Habilidades</Link>
-                <Link to="/trabajos">Trabajos</Link>
-                <Link to="/contacto">Contacto</Link>
+                <a href="/">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#habilidades">Habilidades</a>
+                <a href="#trabajos">Trabajos</a>
+                <a href="#contacto">Contacto</a>
             </nav>
 
             <div id="icono-nav" onClick={() => console.log('Responsive Menu')}>

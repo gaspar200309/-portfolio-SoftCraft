@@ -3,15 +3,15 @@ import './Trabajos.css';
 import ImagenesApp from '../../assets/ImagenesApp';
 
 const trabajosData = [
-    { id: 1, categoria: 'disenio', img: ImagenesApp.trabajo1, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
-    { id: 2, categoria: 'programacion', img: ImagenesApp.trabajo2, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
-    { id: 3, categoria: 'animaciones', img: ImagenesApp.trabajo3, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
-    { id: 4, categoria: 'disenio', img: ImagenesApp.trabajo4, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
-    { id: 5, categoria: 'animaciones', img: ImagenesApp.trabajo5, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
-    { id: 6, categoria: 'programacion', img: ImagenesApp.trabajo6, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
-    { id: 7, categoria: 'disenio', img: ImagenesApp.trabajo7, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
-    { id: 8, categoria: 'programacion', img: ImagenesApp.trabajo8, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
-    { id: 9, categoria: 'programacion', img: ImagenesApp.trabajo9, titulo: 'Titulo del Trabajo', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 1, categoria: 'disenio', img: ImagenesApp.trabajo1, titulo: 'Qatar Desing', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 2, categoria: 'programacion', img: ImagenesApp.trabajo2, titulo: 'Página Web', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 3, categoria: 'animaciones', img: ImagenesApp.trabajo3, titulo: 'Animación Interactiva', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 4, categoria: 'disenio', img: ImagenesApp.trabajo4, titulo: 'Galaxias', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 5, categoria: 'animaciones', img: ImagenesApp.trabajo5, titulo: 'Animacion de Amor', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 6, categoria: 'programacion', img: ImagenesApp.trabajo6, titulo: 'React App', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 7, categoria: 'disenio', img: ImagenesApp.trabajo7, titulo: 'HTML & CSS Desing', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 8, categoria: 'programacion', img: ImagenesApp.trabajo8, titulo: 'User APP', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 9, categoria: 'programacion', img: ImagenesApp.trabajo9, titulo: 'Tech App', tecnologias: ['html', 'css', 'javascript'] },
 ];
 
 function Trabajos() {

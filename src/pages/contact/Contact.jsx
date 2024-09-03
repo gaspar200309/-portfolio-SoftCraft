@@ -1,5 +1,4 @@
-import React from "react";
-import "./Contacto.css";
+import './Contacto.css';
 
 function Contacto() {
   return (
