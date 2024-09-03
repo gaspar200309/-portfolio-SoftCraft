@@ -7,10 +7,13 @@ import backend from "../../assets/img/backend2.jpg"
 import mobileDev from "../../assets/img/mobileDev.jpg"
 import ai from "../../assets/img/AI.jpg"
 import devOps from "../../assets/img/devops.jpg"
+
+
 function Servicios() {
+    
     return (
         <section id="servicios" className="servicios">
-        <h1>Servicios</h1>
+        <h1 className='title'>Servicios</h1>
         <div className="fila">
             
             <div className="col">
