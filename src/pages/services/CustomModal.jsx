@@ -1,6 +1,6 @@
 import React from 'react';
 import './CustomModal.css';
-
+import { FaTimes } from 'react-icons/fa';
 function CustomModal({ show, onClose, title, content, images }) {
     if (!show) return null;
 
@@ -20,11 +20,10 @@ function CustomModal({ show, onClose, title, content, images }) {
                         ))}
                     </div>
                 </div>
-                <button className="close-button" onClick={onClose}>Cerrar</button>
+                <FaTimes className="close-icon" onClick={onClose} />
             </div>
         </div>
     );
 }
 
 export default CustomModal;
-

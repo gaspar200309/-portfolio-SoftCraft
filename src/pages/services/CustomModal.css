@@ -4,56 +4,52 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
 }
 
 .modal-content {
-  background: white;
-  padding: 20px;
+  background-color: white;
   border-radius: 8px;
-  max-width: 800px;
-  width: 90%;
+  width: 80%;
+  max-width: 1000px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
   position: relative;
 }
 
 .modal-body {
   display: flex;
-  margin-top: 10px;
-  gap: 20px;
+  flex-direction: row;
+  width: 100%;
 }
 
 .modal-images {
-  flex-basis: 40%;
-  flex-shrink: 0;
+  flex: 1;
+  overflow: hidden;
 }
 
 .modal-text {
-  flex-basis: 60%;
+  flex: 1;
+  padding: 20px;
+  overflow-y: auto;
+  text-align: justify;
 }
 
 .modal-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
-  border-radius: 5px;
 }
 
-.close-button {
+.close-icon {
   position: absolute;
   top: 10px;
   right: 10px;
-  background: #ff5c5c;
-  color: white;
-  border: none;
-  padding: 5px 10px;
+  font-size: 24px;
+  color: #151212;
   cursor: pointer;
-  border-radius: 3px;
-}
-
-.close-button:hover {
-  background: #ff3838;
 }
