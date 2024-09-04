@@ -4,6 +4,10 @@ import Servicios from "../services/Services";
 import Habilidades from "../skills/Skills";
 import Trabajos from "../jobs/Jobs";
 import Contacto from "../contact/Contact";
+import Vision from "../aboutUs/Vision";
+import Mision from "../aboutUs/Mision";
+
+//assets
 import ImagenesApp from "../../assets/ImagenesApp";
 
 //css
@@ -50,6 +54,8 @@ function Inicio() {
           </div>
         </section>
       </span>
+      <Vision />
+      <Mision />
       <Servicios />
       <Habilidades />
       <Trabajos />
