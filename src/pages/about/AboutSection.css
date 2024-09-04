@@ -1,0 +1,108 @@
+:root {
+    --primary-color: #0a74da;
+    --secondary-color: #f0f0f0;
+    --text-color: #333;
+    --background-color: #ffffff;
+    --font-family: 'Roboto', sans-serif;
+  }
+  
+  .about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-image: url('../../assets/img//backendOP1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: var(--text-color);
+    text-align: center;
+  }
+  
+  .about-content {
+    max-width: 800px;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  .about-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+  
+  .about-subtitle {
+    font-size: 28px;
+    margin-top: 40px;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+  
+  .about-description,
+  .services-list,
+  .values-list {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .services-list,
+  .values-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .services-list li,
+  .values-list li {
+    margin-bottom: 10px;
+  }
+  
+  .contact-button {
+    margin-top: 30px;
+    padding: 15px 30px;
+    font-size: 18px;
+    color: var(--background-color);
+    background-color: var(--primary-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-button:hover {
+    background-color: darken(var(--primary-color), 10%);
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 28px;
+    }
+  
+    .about-subtitle {
+      font-size: 24px;
+    }
+  
+    .about-description {
+      font-size: 16px;
+    }
+  
+    .contact-button {
+      width: 100%;
+      padding: 15px 0;
+      
+    }
+  }
+  

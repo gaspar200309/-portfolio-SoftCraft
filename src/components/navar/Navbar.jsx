@@ -1,37 +1,47 @@
-// src/components/Navbar/Navbar.js
+import { useState } from 'react';
 import ImagenesApp from '../../assets/ImagenesApp';
-import { Link } from 'react-router-dom';
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaYoutube, FaSquareXTwitter } from "react-icons/fa6";
+import { Link, useLocation } from 'react-router-dom';
+import { FaFacebookSquare, FaYoutube, FaTimes } from "react-icons/fa";
+import { GiHamburgerMenu } from "react-icons/gi";
 import './Navbar.css';
 
-
 function Navbar() {
-    return (
-        <header>
-            <div className="logo">
-                <img src={ImagenesApp.logo} height='100px' width='100px' alt="Logo"/>
-                <h1>SoftCraft</h1>
-            </div>
-            <nav id="nav" className="">
-                <a href="/">Inicio</a>
-                <a href="#servicios">Servicios</a>
-                <a href="#habilidades">Habilidades</a>
-                <a href="#trabajos">Trabajos</a>
-                <a href="#contacto">Contacto</a>
-            </nav>
+  const [menuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
-            <div id="icono-nav" onClick={() => console.log('Responsive Menu')}>
-                <i className="fa-solid fa-bars"></i>
-            </div>
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
 
-            <div className="redes">
-                <Link to="/"><FaSquareXTwitter/></Link>
-                <Link to="/"><FaYoutube/></Link>
-                <Link to="/"><FaFacebookSquare/></Link>
-            </div>
-        </header>
-    );
+  const closeMenu = () => {
+    setMenuOpen(false);
+  };
+
+  return (
+    <header className="navbar">
+      <div className="logo">
+        <img src={ImagenesApp.logo} height="100px" width="100px" alt="Logo" />
+        <h1>SoftCraft</h1>
+      </div>
+
+      <nav id="nav" className={menuOpen ? 'nav open' : 'nav'}>
+        <a href="/" onClick={closeMenu} className={location.pathname === '/' ? 'active' : ''}>Inicio</a>
+        <a href="#servicios" onClick={closeMenu} className={location.hash === '#servicios' ? 'active' : ''}>Servicios</a>
+        <a href="#habilidades" onClick={closeMenu} className={location.hash === '#habilidades' ? 'active' : ''}>Acerca de</a>
+        <a href="#trabajos" onClick={closeMenu} className={location.hash === '#trabajos' ? 'active' : ''}>Trabajos</a>
+        <a href="#contacto" onClick={closeMenu} className={location.hash === '#contacto' ? 'active' : ''}>Contáctenos</a>
+      </nav>
+
+      <div id="icono-nav" onClick={toggleMenu}>
+        {menuOpen ? <FaTimes /> : <GiHamburgerMenu />}
+      </div>
+
+      <div className="redes">
+        <Link to="/" onClick={closeMenu}><FaYoutube /></Link>
+        <Link to="/" onClick={closeMenu}><FaFacebookSquare /></Link>
+      </div>
+    </header>
+  );
 }
 
 export default Navbar;
