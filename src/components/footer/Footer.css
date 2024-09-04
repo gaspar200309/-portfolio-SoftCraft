@@ -4,7 +4,6 @@ body {
 }
 
 h1 {
-  color: #fff;
   text-align: center;
 }
 
@@ -143,7 +142,7 @@ footer .container {
     flex-wrap: wrap;
   }
 }
-.SC-span{
-    font-weight: 900;
-    font-style: italic;
+.SC-span {
+  font-weight: 900;
+  font-style: italic;
 }
