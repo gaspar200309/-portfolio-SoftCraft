@@ -5,7 +5,6 @@
     padding: 60px 70px;
     position: relative;
     z-index: 10;
-    background: linear-gradient(rgba(53, 53, 53, 0.3), rgba(12, 29, 158, 0.8));
 }
 
 .servicios .fila{
@@ -83,4 +82,7 @@
 }
 .img-container{
     height: 230px;
+}
+.title{
+    color: #333232;
 }

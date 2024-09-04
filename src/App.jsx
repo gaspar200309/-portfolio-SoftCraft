@@ -6,6 +6,7 @@ function App() {
         <Router>
             <Routes>
                 <Route path="/" element={<Inicio />} />
+                <Route path='frontend'></Route>
                 {/* <Route path="/servicios" element={<Servicios />} />
                 <Route path="/habilidades" element={<Habilidades />} />
                 <Route path="/trabajos" element={<Trabajos />} />
