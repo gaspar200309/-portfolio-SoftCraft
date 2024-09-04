@@ -6,7 +6,8 @@ import Trabajos from "../jobs/Jobs";
 import Contacto from "../contact/Contact";
 import ImagenesApp from "../../assets/ImagenesApp";
 import About from "../about/About";
-
+import Demo from "../../components/chat/Chat2";
+import  Chat  from "../../components/chat/Chat";
 //css
 import "./Inicio.css";
 
@@ -66,8 +67,11 @@ function Inicio() {
         </div>
       </span>
       <About />
+    <Demo/>
+
       <Servicios />
       <Trabajos />
+      <Chat/>
       <Contacto />
     </>
   );
