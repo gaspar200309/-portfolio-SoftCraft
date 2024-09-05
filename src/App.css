@@ -4,7 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'M PLUS Rounded 1c';
+    font-family: normal normal normal 16px / 28px 'Helvetica Neue' !important;
+    letter-spacing: 0.5px !important;
 }
 
 html{

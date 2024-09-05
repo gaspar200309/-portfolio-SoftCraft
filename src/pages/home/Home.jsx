@@ -9,7 +9,9 @@ import Mision from "../aboutUs/Mision";
 
 //assets
 import ImagenesApp from "../../assets/ImagenesApp";
-
+import About from "../about/About";
+import Demo from "../../components/chat/Chat2";
+import  Chat  from "../../components/chat/Chat";
 //css
 import "./Inicio.css";
 
@@ -22,16 +24,17 @@ function Inicio() {
   return (
     <>
       <span className="sombra">
-        <section id="inicio" className="inicio">
+        <section
+          id="inicio"
+          className="inicio">
           <div className="contenido">
             <Navbar />
             <div className="fila">
               <div className="col">
                 <h2>Soluciones web personalizadas.</h2>
                 <p>
-                  Somos una empresa innovadora dedicada a crear soluciones
-                  tecnológicas personalizadas, con un enfoque especializado en
-                  Inteligencia Artificial (IA) y Machine Learning.
+                  Creamos soluciones tecnológicas personalizadas, con un enfoque
+                  especializado en Inteligencia Artificial (IA)
                 </p>
                 <button
                   className="btn btn-1"
@@ -40,25 +43,38 @@ function Inicio() {
                       "62982552",
                       "Hola, estoy interesado en conocer más sobre sus servicios de desarrollo. ¿Podemos hablar?"
                     )
-                  }
-                >
+                  }>
                   CONTACTANOS
                 </button>
               </div>
               <div className="col">
                 <div className="contenedor-img">
-                  <img src={ImagenesApp.inicio} alt="Inicio" />
+                  <img
+                    src={ImagenesApp.inicio}
+                    alt="Inicio"
+                  />
                 </div>
               </div>
             </div>
           </div>
         </section>
+        <div className="contend-a">
+          <div className="content-about">
+            <h1 className="about-title">Quiénes Somos</h1>
+            <p className="about-description">
+              Somos una empresa dedicada al desarrollo de software, especializada
+              en la creación de aplicaciones móviles y web, integrando
+              inteligencia artificial para ofrecer soluciones innovadoras y de
+              alta calidad a nuestros clientes.
+            </p>
+          </div>
+        </div>
       </span>
       <Vision />
       <Mision />
       <Servicios />
-      <Habilidades />
       <Trabajos />
+      <Chat/>
       <Contacto />
     </>
   );

@@ -1,53 +1,102 @@
-/* src/components/Navbar/Navbar.css */
-header {
+
+  .navbar {
     display: flex;
     justify-content: space-between;
-    padding: 30px 0;
     align-items: center;
-}
-
-.logo {
+    padding: 20px;
+    position: relative;
+  }
+  
+  .logo {
     display: flex;
     align-items: center;
-    color: #00deef;
+    color: var(--primary-color);
     font-size: 25px;
-}
-
-#nav a {
-    color: #fff;
+  }
+  
+  .logo img {
+    margin-right: 10px;
+  }
+  
+  #nav {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #nav a {
+    color: var(--text-color);
     text-decoration: none;
-    display: inline-block;
     padding: 5px 10px;
     text-transform: uppercase;
-    border: 2px solid transparent;
-}
-
-#nav a:hover {
-    border-bottom: 2px solid #ff5b00;
-}
-
-.redes a {
-    text-decoration: none;
-    color: #fff;
-    display: inline-block;
-    margin: 0 10px;
-}
-
-.redes a:hover {
-    color: #ff5b00;
-}
-
-#icono-nav {
-    height: 30px;
-    width: 30px;
-    text-align: center;
-    line-height: 30px;
-    border-radius: 50%;
-    transition: 0.3s;
-    cursor: pointer;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  #nav a:hover,
+  #nav a.active {
+    border-bottom: 2px solid var(--hover-color);
+  }
+  
+  .redes {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .redes a {
+    color: var(--text-color);
+    transition: color 0.3s ease;
+  }
+  
+  .redes a:hover {
+    color: var(--hover-color);
+  }
+  
+  #icono-nav {
     display: none;
-}
-
-#icono-nav:hover {
-    background-color: #3e3e3e;
-}
+    color: var(--text-color);
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  #icono-nav:hover {
+    color: var(--hover-color);
+  }
+  
+  .nav.open {
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    flex-direction: column;
+    background-color: var(--background-color);
+    border-radius: 5px;
+    padding: 10px;
+    animation: slideIn 0.3s ease;
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    #nav {
+      display: none;
+      flex-direction: column;
+    }
+  
+    #nav.open {
+      display: flex;
+    }
+  
+    #icono-nav {
+      display: block;
+    }
+  }
+  
