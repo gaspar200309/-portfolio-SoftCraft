@@ -1,0 +1,30 @@
+.container-mision {
+  width: 100%;
+  background-image: url("../../assets/img/mision.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 100%;
+}
+
+.container-content {
+  max-width: 600px;
+  height: 100%;
+  margin: auto;
+  color: #fff;
+  line-height: 28px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container-content h1 {
+  color: #00bac8;
+  font-size: 40px;
+}
+
+.opasity {
+  background-color: #000000ad;
+  height: 500px;
+}

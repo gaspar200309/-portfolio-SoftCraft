@@ -4,6 +4,10 @@ import Servicios from "../services/Services";
 import Habilidades from "../skills/Skills";
 import Trabajos from "../jobs/Jobs";
 import Contacto from "../contact/Contact";
+import Vision from "../aboutUs/Vision";
+import Mision from "../aboutUs/Mision";
+
+//assets
 import ImagenesApp from "../../assets/ImagenesApp";
 import About from "../about/About";
 import Demo from "../../components/chat/Chat2";
@@ -66,9 +70,8 @@ function Inicio() {
           </div>
         </div>
       </span>
-      <About />
-    <Demo/>
-
+      <Vision />
+      <Mision />
       <Servicios />
       <Trabajos />
       <Chat/>

@@ -1,0 +1,41 @@
+.container-vision {
+  display: flex;
+  width: 100%;
+  margin: 150px 0px;
+}
+
+.image-vision {
+  width: 50%;
+  position: relative;
+}
+
+.image-vision img {
+  position: absolute;
+  border-radius: 10px;
+}
+
+.principal-img img {
+  max-width: 250px;
+  left: 50%;
+}
+
+.secundary-img img {
+  max-width: 300px;
+  left: calc(40% - 175px);
+  top: 50px;
+}
+
+.terniary-img img {
+  max-width: 200px;
+  left: calc(50% - 25px);
+  top: 70%;
+}
+
+.text-vision {
+  max-width: 40%;
+  line-height: 28px;
+}
+
+.text-vision h1 {
+  color: #00bac8;
+}

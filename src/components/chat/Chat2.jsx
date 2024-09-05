@@ -19,6 +19,7 @@ export default function Demo() {
       console.error("Something went wrong!", error);
     }
   }
+
   return (
     <div>
       <button onClick={handleClick}>Send</button>
