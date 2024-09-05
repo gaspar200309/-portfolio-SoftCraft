@@ -29,10 +29,11 @@ function Trabajos() {
         <section className="trabajos" id="trabajos">
             <h2>Mis Trabajos</h2>
             <nav>
-                <button className={`borde ${categoriaSeleccionada === 'todos' ? 'active' : ''}`} onClick={() => filtrarTrabajos('todos')}>Todos</button>
-                <button className={`${categoriaSeleccionada === 'disenio' ? 'active' : ''}`} onClick={() => filtrarTrabajos('disenio')}>Diseño</button>
-                <button className={`${categoriaSeleccionada === 'programacion' ? 'active' : ''}`} onClick={() => filtrarTrabajos('programacion')}>Programación</button>
-                <button className={`${categoriaSeleccionada === 'animaciones' ? 'active' : ''}`} onClick={() => filtrarTrabajos('animaciones')}>Animaciones</button>
+            <button className={`${categoriaSeleccionada === 'todos' ? 'borde active' : ''}`} onClick={() => filtrarTrabajos('todos')}>Todos</button>
+            <button className={`${categoriaSeleccionada === 'disenio' ? 'borde active' : ''}`} onClick={() => filtrarTrabajos('disenio')}>Diseño</button>
+            <button className={`${categoriaSeleccionada === 'programacion' ? 'borde active' : ''}`} onClick={() => filtrarTrabajos('programacion')}>Programación</button>
+            <button className={`${categoriaSeleccionada === 'animaciones' ? 'borde active' : ''}`} onClick={() => filtrarTrabajos('animaciones')}>Animaciones</button>
+
             </nav>
 
             <div className="galeria">
