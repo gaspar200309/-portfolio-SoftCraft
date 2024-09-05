@@ -53,7 +53,7 @@ function Footer() {
                         </nav>
                         <ul className='menu'>
                             <li>
-                                <h4>Resoruces</h4>
+                                <h4>Resources</h4>
                             </li>
                             <li>
                                 <Link to={'/'}>
@@ -63,7 +63,7 @@ function Footer() {
                                     Block
                                 </Link>
                                 <Link to={'/'}>
-                                    WEbinars 
+                                    Webinars 
                                 </Link>
                                 <Link to={'/'}>
                                     eBlocks

@@ -52,6 +52,7 @@
   cursor: pointer;
   background: linear-gradient(to right, #b84101, #ff9900);
   transition: 0.2s;
+  margin-left: 0px;
 }
 .contacto .btn:hover {
   height: 12%;

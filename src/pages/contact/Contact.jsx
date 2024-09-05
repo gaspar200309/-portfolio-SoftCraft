@@ -6,7 +6,7 @@ function Contacto() {
       className="contacto"
       id="contacto">
       <div className="contenedor-contacto">
-        <h2>Contacto</h2>
+        <h2>Contáctenos</h2>
         <div className="fila">
           <div className="col">
             <div className="info">
