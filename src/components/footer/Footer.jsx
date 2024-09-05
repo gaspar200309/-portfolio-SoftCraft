@@ -1,4 +1,4 @@
-import React from 'react';
+    import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 
@@ -17,27 +17,27 @@ function Footer() {
                         <Link to = {'/'} className = 'brand'>SoftCraft</Link> 
                         <ul className='media-icons'>
                             <li>
-                                <Link to = {'https://www.facebook.com/profile.php?id=100093196947866'}>
+                                <Link to = {'https://www.facebook.com/profile.php?id=100093196947866'} target="blank">
                                     <FaFacebookSquare/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to = {'https://www.instagram.com/armando_gaspar_mamani/'}>
+                                <Link to = {'https://www.instagram.com/armando_gaspar_mamani/'} target="blank">
                                     <FaInstagram/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to = {'/'}>
+                                <Link to = {'https://github.com/gaspar200309'} target="blank">
                                     <FaGithub/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to = {'/'}>
+                                <Link to = {'https://www.tiktok.com/@gaspar_629'} target="blank">
                                     <FaTiktok/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to = {'/'}>
+                                <Link to = {'https://acortar.link/cG9GpM'} target="blank">
                                     <FaWhatsapp/>
                                 </Link>
                             </li>
