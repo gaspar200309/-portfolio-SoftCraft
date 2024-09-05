@@ -5,7 +5,7 @@ const AboutSection = () => {
   return (
     <section className="about-section">
       <div className="about-content">
-        <h1 className="about-title">Quiénes Somos</h1>
+        <h1 className="about-title">¿Quiénes somos?</h1>
         <p className="about-description">
           Somos una empresa dedicada al desarrollo de software, especializada en la creación de aplicaciones móviles y web,
           integrando inteligencia artificial para ofrecer soluciones innovadoras y de alta calidad a nuestros clientes.

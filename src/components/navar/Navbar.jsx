@@ -37,8 +37,8 @@ function Navbar() {
       </div>
 
       <div className="redes">
-        <Link to="/" onClick={closeMenu}><FaYoutube /></Link>
-        <Link to="/" onClick={closeMenu}><FaFacebookSquare /></Link>
+        <Link title="Visítanos en YouTube" to="/" onClick={closeMenu}><FaYoutube /></Link>
+        <Link title="No te pierdas nuestros post más recientes en Facebook"to="/" onClick={closeMenu}><FaFacebookSquare /></Link>
       </div>
     </header>
   );
