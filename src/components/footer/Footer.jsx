@@ -1,4 +1,4 @@
-import React from 'react';
+    import React from 'react';
 import './Footer.css';
 import { Link } from 'react-router-dom';
 
@@ -7,6 +7,7 @@ import { FaTiktok } from 'react-icons/fa';
 import { FaWhatsapp } from 'react-icons/fa'
 import { FaXTwitter } from 'react-icons/fa6';
 import { FaGithub } from 'react-icons/fa6';
+import { FaInstagram } from 'react-icons/fa';
 function Footer() {
     return (
         <footer className='footer1'>
@@ -16,53 +17,40 @@ function Footer() {
                         <Link to = {'/'} className = 'brand'>SoftCraft</Link> 
                         <ul className='media-icons'>
                             <li>
-                                <Link to = {'/'}>
+                                <Link to = {'https://www.facebook.com/profile.php?id=100093196947866'} target="blank">
                                     <FaFacebookSquare/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to = {'/'}>
-                                    <FaXTwitter/>
+                                <Link to = {'https://www.instagram.com/armando_gaspar_mamani/'} target="blank">
+                                    <FaInstagram/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to = {'/'}>
+                                <Link to = {'https://github.com/gaspar200309'} target="blank">
                                     <FaGithub/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to = {'/'}>
+                                <Link to = {'https://www.tiktok.com/@gaspar_629'} target="blank">
                                     <FaTiktok/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to = {'/'}>
+                                <Link to = {'https://acortar.link/cG9GpM'} target="blank">
                                     <FaWhatsapp/>
                                 </Link>
                             </li>
                         </ul>
                     </div>
                     <div className='col2'>
-                        <ul className='menu'>
-                            <li>
-                                <h4>About</h4>
-                            </li>
-                            <li>
-                                <Link to = {'/servicios'} >Services</Link>
-                            </li>
-                            <li>
-                                <Link to = {'/trabajos'} >trabajos</Link>
-                            </li>
-                            <li>
-                                <Link to = {''} >Pricing</Link>
-                            </li>
-                            <li>
-                                <Link to = {'/contacto'} >Contact</Link>
-                            </li>
-                            <li>
-                                <Link to = {''} >Career</Link>
-                            </li>
-                        </ul>
+                        <nav id="nav" className="navigation">
+                            <a href="/">Inicio</a>
+                            <a href="#servicios">Servicios</a>
+                            <a href="#habilidades">Habilidades</a>
+                            <a href="#trabajos">Trabajos</a>
+                            <a href="#contacto">Contacto</a>
+                        </nav>
                         <ul className='menu'>
                             <li>
                                 <h4>Resoruces</h4>

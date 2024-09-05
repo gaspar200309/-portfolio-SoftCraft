@@ -85,6 +85,14 @@ footer .container {
   gap: 1em;
 }
 
+.navigation{
+  margin-bottom: 0.6em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+
 .footer1 .menu a:hover {
   text-decoration: underline;
 }
