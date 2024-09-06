@@ -4,7 +4,7 @@ import ImagenesApp from '../../assets/ImagenesApp';
 
 const trabajosData = [
     { id: 1, categoria: 'disenio', img: ImagenesApp.samba, titulo: 'Administrador Samba para OpenSuse', tecnologias: ['python'] },
-    { id: 2, categoria: 'programacion', img: ImagenesApp.trabajo2, titulo: 'Página Web', tecnologias: ['html', 'css', 'javascript'] },
+    { id: 2, categoria: 'programacion', img: ImagenesApp.AlquilerAmigos, titulo: 'Alquiler de amigos', tecnologias: ['html', 'css', 'javascript', 'React js', 'Python', 'Django', 'Postgre SQL'] },
     { id: 3, categoria: 'animaciones', img: ImagenesApp.trabajo3, titulo: 'Animación Interactiva', tecnologias: ['html', 'css', 'javascript'] },
     { id: 4, categoria: 'disenio', img: ImagenesApp.trabajo4, titulo: 'Galaxias', tecnologias: ['html', 'css', 'javascript'] },
     { id: 5, categoria: 'animaciones', img: ImagenesApp.trabajo5, titulo: 'Animacion de Amor', tecnologias: ['html', 'css', 'javascript'] },
