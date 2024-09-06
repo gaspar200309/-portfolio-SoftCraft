@@ -1,88 +1,89 @@
 /* SECCION S E R V I C I O S */
-.servicios{
-    max-width: 1fr;
-    margin: auto;
-    padding: 60px 70px;
-    position: relative;
-    z-index: 10;
+.servicios {
+  max-width: 1fr;
+  margin: auto;
+  padding: 60px 70px;
+  position: relative;
+  z-index: 10;
 }
 
-.servicios .fila{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 50px;
+.servicios .fila {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
 }
 
-.servicios .fila .col{
-    text-align: center;
-    width: 30%;
+.servicios .fila .col {
+  text-align: center;
+  width: 30%;
 }
 
-.servicios .fila .col .card{
-    border: 1px solid #8d8d8d;
-    height: 470px;
-    background-color: #333232;
-    padding: 0; 
-    border-radius: 20px;
-    position: relative;
-    transition: 0.3s;
-    box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.1);
-    overflow: hidden;
+.servicios .fila .col .card {
+  border: 1px solid #8d8d8d;
+  height: 470px;
+  background-color: #333232;
+  padding: 0;
+  border-radius: 20px;
+  position: relative;
+  transition: 0.3s;
+  box-shadow: 3px 3px 3px 3px rgba(255, 255, 255, 0.1);
+  overflow: hidden;
 }
 
 .servicios .fila .col .card .image-card {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-.servicios .fila .col .card h3{
-    margin: 15px 0;
-    padding: 0 30px;
-    color: #ffff;
+.servicios .fila .col .card h3 {
+  margin: 15px 0;
+  padding: 0 30px;
+  color: #ffff;
 }
 
-.servicios .fila .col .card p{
-    color: #ffffff;
-    line-height: 28px;
-    font-size: 13px;
-    text-align: justify;
-    padding: 0 30px;
+.servicios .fila .col .card p {
+  color: #ffffff;
+  line-height: 28px;
+  font-size: 13px;
+  text-align: justify;
+  padding: 0 30px;
 }
 
-.servicios .fila .col .card a{
-    text-decoration: none;
-    color: #008cff;
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+.servicios .fila .col .card a {
+  text-decoration: none;
+  color: #008cff;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-.servicios .fila .col .card a:hover{
-    text-decoration: underline;
+.servicios .fila .col .card a:hover {
+  text-decoration: underline;
 }
 
 .servicios .fila .col .card:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
-    .servicios .fila {
-        flex-direction: column;
-        align-items: center;
-    }
-    .servicios .fila .col {
-        width: 100%;
-        margin-bottom: 20px;
-    }
+  .servicios .fila {
+    flex-direction: column;
+    align-items: center;
+  }
+  .servicios .fila .col {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
-.img-container{
-    height: 230px;
+.img-container {
+  height: 230px;
 }
-.title{
-    color: #333232;
+.title {
+  color: #333232;
+  text-align: center;
 }
