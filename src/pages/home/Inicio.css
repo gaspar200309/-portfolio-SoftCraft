@@ -37,7 +37,7 @@ html {
   margin-right: 20px;
 }
 
-#inicio header nav {
+#inicio header {
   display: flex;
   flex-wrap: wrap;
 }
@@ -109,7 +109,7 @@ html {
   transform: scale(1.1);
 }
 
-#icono-nav {
+/* #icono-nav {
   height: 30px;
   width: 30px;
   text-align: center;
@@ -118,7 +118,7 @@ html {
   transition: 0.3s;
   cursor: pointer;
   display: none;
-}
+} */
 
 #icono-nav:hover {
   background-color: #3e3e3e;
@@ -182,7 +182,7 @@ html {
     margin-bottom: 20px;
   }
 
-  #inicio header nav {
+  #inicio header {
     width: 100%;
     display: flex;
     justify-content: space-around;
