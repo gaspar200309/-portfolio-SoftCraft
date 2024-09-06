@@ -43,6 +43,7 @@ function Habilidades() {
         };
     };
 
+    
     return (
         <section className="habilidades" id="habilidades">
             <div className="contenedor-habi">
