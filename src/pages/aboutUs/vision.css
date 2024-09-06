@@ -39,3 +39,46 @@
 .text-vision h1 {
   color: #00bac8;
 }
+
+/* Responsivo para móviles */
+@media (max-width: 768px) {
+  .container-vision {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .image-vision {
+    width: 100%;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .image-vision img {
+    position: static;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .principal-img img {
+    max-width: 100%;
+  }
+
+  .secundary-img, .terniary-img {
+    display: none; /* Ocultar imágenes secundarias y terciarias en móviles */
+  }
+
+  .text-vision {
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .text-vision h1 {
+    font-size: 1.8rem;
+  }
+
+  .text-vision p {
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+}
