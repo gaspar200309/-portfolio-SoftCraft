@@ -17,7 +17,7 @@ import techSupport from "../../../src/assets/img/techSupport.jpg"
 function Servicios() {
     const [showModal, setShowModal] = useState(false);
     const [modalContent, setModalContent] = useState({ title: '', content: [], images: [] });
-
+    //dedue
     const handleShowModal = (event,title, content, images) => {
         event.preventDefault();
         setModalContent({ title, content, images });
